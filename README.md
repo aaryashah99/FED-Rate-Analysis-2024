@@ -1,3 +1,5 @@
+#FED Rate Analysis 2024
+
 This project aims to analyze key economic variables using exploratory data analysis (EDA) techniques to understand the relationships between interest rates, GDP growth, inflation, unemployment, retail sales, and market trends. The analysis includes descriptive statistics, correlation analysis, and trend identification over time.
 
 Key components of this project:
