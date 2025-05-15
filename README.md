@@ -1,5 +1,4 @@
-Objective:
-To analyze historical macroeconomic data and identify patterns, correlations, and lagged relationships among key indicators such as interest rates, inflation, unemployment, GDP growth, retail sales, and the stock market.
+Objective:To analyze historical macroeconomic data and identify patterns, correlations, and lagged relationships among key indicators such as interest rates, inflation, unemployment, GDP growth, retail sales, and the stock market.
 
 Data Sources (assumed from table names):
 fed_rates: Interest rates (Fed)
