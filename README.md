@@ -1,53 +1,60 @@
-# 📈 FED Rate Exploratory Data Analysis
+# Impact of Federal Reserve Interest Rate Changes on the U.S. Economy (2015–2023)
 
-This project performs an exploratory data analysis (EDA) to understand how the Federal Reserve's interest rate changes affect key macroeconomic indicators over time. The analysis uses SQL and structured datasets from 2015 to 2023 to visualize and interpret relationships between monetary policy and the broader U.S. economy.
+This project uses SQL to explore the downstream effects of U.S. Federal Reserve rate hikes and cuts on key macroeconomic indicators like GDP, inflation, unemployment, retail sales, and the stock market.
 
----
+## Files Included
 
-##  Datasets Used
+| File Name                          | Description                                 |
+|-----------------------------------|---------------------------------------------|
+| `fed_rates.csv`                   | Federal Funds Rate (monthly)                |
+| `gdp_growth.csv`                  | Monthly GDP growth rate (%)                 |
+| `inflation.csv`                   | Monthly CPI inflation (%)                   |
+| `unemployment.csv`                | Monthly unemployment rate (%)               |
+| `retail_sales.csv`                | Monthly U.S. retail sales (USD)             |
+| `sp500_close_px.csv`             | Monthly closing price of S&P 500            |
+| `FED_Rate_Exploratory_Data_Analysis.sql` | SQL analysis of all indicators     |
 
-- **fed_rates.csv**: Monthly Federal Funds target rate
-- **gdp_growth.csv**: Monthly GDP growth rate (approximated)
-- **inflation.csv**: CPI index and inflation rate
-- **unemployment.csv**: Monthly U.S. unemployment rate
-- **retail_sales.csv**: Monthly total U.S. retail sales
-- **sp500_close_px.csv**: S&P 500 monthly closing prices
+## Project Objective
 
----
+To explore how interest rate changes by the Federal Reserve correlate with:
 
-##  Tools & Skills
+- GDP Growth
+- Inflation
+- Retail Sales
+- Unemployment
+- S&P 500 performance
 
-- **SQL**: Aggregations, JOINs, date-time transformations, subqueries
-- **Python/Pandas** *(optional extension)*: For data cleaning and advanced analysis
-- **Excel/CSV**: Data source formatting
+The project is **exploratory**, not predictive — its goal is to understand economic behavior under different monetary policy regimes.
 
----
+## Key Analysis Components
 
-##  Key Analytical Focus
+- Quarterly descriptive stats for each indicator
+- Lagged effects of rate hikes on GDP and unemployment
+- Correlation between:
+  - Interest Rates & Inflation
+  - Interest Rates & S&P 500
+  - Interest Rates & Retail Sales
+- Retail and GDP growth during rate hike periods
 
-- Track Fed rate changes alongside:
-  - GDP growth trends
-  - Inflation spikes and drops
-  - Retail activity fluctuations
-  - Labor market responses (unemployment)
-  - Equity market movement (S&P 500)
-- Investigate **lag effects** between rate hikes/cuts and downstream economic responses
-- Use SQL queries to create metrics like rate change deltas, moving averages, and economic divergence markers
+## Methodology Summary
 
----
+- Unified all datasets by date and cleaned formats
+- Used SQL to calculate moving averages, rate changes, and lagged impacts
+- Segmented data by Fed policy regimes (flat, hike, cut, etc.)
+- Analyzed how macroeconomic variables responded to these phases
 
-##  Results Summary
+## Sample Insights
 
-- Interest rate hikes tend to be **followed by declines in GDP growth and retail sales**, though with lags of several months.
-- **Unemployment increases modestly** after rate hikes, confirming the cooling effect on the labor market.
-- Inflation tends to **peak before rate hikes**, aligning with policy reaction timing.
-- The **S&P 500** often shows initial dips after rate increases but rebounds as market expectations reset.
-- Retail sales and equity performance showed **the strongest sensitivity** to interest rate direction changes.
+- **GDP:** Responds with 3–6 month lag post-hike
+- **Inflation:** Peaks before rate hikes begin
+- **Retail Sales:** Immediate drop after hikes
+- **Unemployment:** Rises slowly over 9–12 months
+- **S&P 500:** Short-term dips, long-term recovery
 
----
+## 🛠Tools Used
 
-##  Conclusion
+- SQL (MySQL/PostgreSQL syntax)
+- CSV files (2015–2023, monthly)
+- GitHub for version control
 
-This project highlights how U.S. monetary policy flows through the economy via consumption, labor, and capital markets. SQL was used to orchestrate cross-variable comparisons, helping identify the timing and strength of relationships between central bank decisions and macroeconomic responses.
 
----
