@@ -51,7 +51,7 @@ The project is **exploratory**, not predictive — its goal is to understand eco
 - **Unemployment:** Rises slowly over 9–12 months
 - **S&P 500:** Short-term dips, long-term recovery
 
-## 🛠Tools Used
+## Tools Used
 
 - SQL (MySQL/PostgreSQL syntax)
 - CSV files (2015–2023, monthly)
